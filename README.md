@@ -1,11 +1,11 @@
 圆形指示灯(Indactor)
 =======
 ### 1、简介：<br>
-    一个封装好的LinearLayout自定义控件。默认是白色底部圆点。可以在代码中直接属性 填写自定义的宽高，间距、未选中的形状与颜色、选中的后形状与颜色等等。<br>
-    学习参考来自：https://github.com/ongakuer/CircleIndicator（大部分内容都是出自他的项目）<br>
+    一个封装好的LinearLayout自定义控件。默认是白色底部圆点。可以在代码中直接属性 填写自定义的宽高，间距、未选中的形状与颜色、选中的后形状与颜色等等。
+    学习参考来自：https://github.com/ongakuer/CircleIndicator（大部分内容都是出自他的项目）
     
 ### 2、使用：<br>
-   #### a、直接在XML布局中，直接填写相应属性。在代码中直接关联Viewpager就好了。<br>
+   a、直接在XML布局中，直接填写相应属性。在代码中直接关联Viewpager就好了。
 ```xml
  <com.github.zqhcxy.mycircleindcator.views.CircleIndicator
      android:id="@+id/indicator"
@@ -18,7 +18,7 @@
 ```java
  indicator.setViewPager(viewpager);
 ```
-    #### b、全部在代码中new出来，填写相应参数属性。配置方法为：<br>
+    b、全部在代码中new出来，填写相应参数属性。配置方法为：
 ```java
             public void configureIndicator(int indicatorWidth, int indicatorHeight, int indicatorMargin)
             public void configureIndicator(int indicatorWidth, int indicatorHeight, int indicatorMargin,
@@ -36,8 +36,8 @@
             app:ci_drawable="@drawable/white_radius"//选中形状与颜色
             app:ci_drawable_unselected="@drawable/white_radius"//未选中的颜色
 ```
-### 4、总结：<br>
-            很简单的一个自定义底部游标控件。调用与实现简单。<br>
+### 4、总结：
+            很简单的一个自定义底部游标控件。调用与实现简单。
             这里是直接复制到项目中来了，也可以用以下方法:
 ```java
             compile 'me.relex:circleindicator:1.1.8@aar'
